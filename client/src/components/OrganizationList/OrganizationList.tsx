@@ -1,6 +1,5 @@
 import { useGetOrganizationsQuery, useDeleteOrganizationMutation } from "../../slices/app/organizationApiSlice";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import styleUserList from './user-list.module.css'
 
 const OrganizationList = () => {
   const [deleteOrganization] = useDeleteOrganizationMutation();
@@ -30,7 +29,7 @@ const OrganizationList = () => {
   } else if (isSuccess){
     content = (
       <div style={{ marginTop: "100px" }}>
-      <table className={styleUserList.table_users}>
+      <table>
           <tbody>
           <tr>
             <th></th>
@@ -38,7 +37,7 @@ const OrganizationList = () => {
           </tr>
       
 
-          {organizations?.map((organization: any, index: any) => {
+          {/* {organizations?.map((organization: any, index: any) => {
             return (
               <tr key={organization.id}>
                 <th scope="row">{index + 1}</th>
@@ -55,7 +54,7 @@ const OrganizationList = () => {
                 </td>
               </tr>
               );
-            })}
+            })} */}
             </tbody>
         </table>
       </div>

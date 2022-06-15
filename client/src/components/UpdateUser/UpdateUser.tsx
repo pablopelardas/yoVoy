@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useGetUserQuery, useUpdateUserMutation } from "../../slices/app/usersApiSlice";
 import styleUser from './update-user.module.css'
 
-const Updateuser = () => {
+const UpdateUser = () => {
     const [updateUser] = useUpdateUserMutation();
     const { id }: any = useParams<{ id: string }>();
     const navigate = useNavigate();
@@ -76,4 +76,4 @@ const Updateuser = () => {
     )
 }
 
-export default Updateuser
+export default UpdateUser
