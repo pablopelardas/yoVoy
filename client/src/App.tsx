@@ -18,6 +18,7 @@ import AdminPanel from './components/AdminPanel/AdminPanel';
 import Updateuser from './components/UpdateUser/UpdateUser';
 import EventsConfig from './components/EventsConfig/EventsConfig';
 import CreateOrganization from './components/CreateOrganization/CreateOrganization';
+import OrganizationList from './components/OrganizationList/OrganizationList';
 
 function App(): JSX.Element {
 	useGetUserAuthQuery();
@@ -52,6 +53,7 @@ function App(): JSX.Element {
 					<Route path="create-category" element={<CreateCategory />} />
 					<Route path="update-user/:id" element={<Updateuser/>}/>
 					<Route path="events-config" element={<EventsConfig />} />
+					<Route path='organization-list' element={<OrganizationList/>}/>
 				</Route>
 				{/* 404 */}
 				<Route path="*" element={<Home />} />
