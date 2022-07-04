@@ -16,6 +16,12 @@ You can access the site at the following link: [YoVoy!](https://yovoy-frontend.h
 - [@Alan](https://github.com/shekingw)
 - [@WorkdayLucas](https://github.com/WorkdayLucas)
 
+## Tech Stack
+
+**Client:** React, Redux, Redux Toolkit, MaterialUI, Typescript
+
+**Server:** Node, Express, Typescript, Sequelize, Postgresql
+
 
 ## Features
 
