@@ -73,7 +73,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd yoVoy
 ```
 
 Install dependencies in both folders (API and CLIENT)
